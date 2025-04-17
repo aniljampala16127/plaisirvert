@@ -16,6 +16,11 @@
     .section-header h2 {
         font-size: 2.2rem;
     }
+    
+    .hero-image {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 /* ---------- MEDIUM SCREENS (992px and down) ---------- */
@@ -42,6 +47,34 @@
     
     .hero-content p {
         font-size: 1.1rem;
+    }
+    
+    .hero-images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .offer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .mission-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .mission-image {
+        order: -1;
+    }
+    
+    .mission-image img {
+        width: 100%;
     }
     
     .footer-content {
@@ -109,13 +142,33 @@
         width: 100%;
     }
     
+    .hero-image {
+        width: 120px;
+        height: 120px;
+    }
+    
     .service-grid, 
-    .benefits-grid {
+    .benefits-list {
         grid-template-columns: 1fr;
+    }
+    
+    .benefit-item {
+        max-width: 400px;
+        margin: 0 auto;
     }
     
     .testimonial-content {
         padding: var(--spacing-lg);
+    }
+    
+    .eco-item {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-lg);
+    }
+    
+    .eco-icon {
+        margin-bottom: var(--spacing-sm);
     }
     
     .footer-links {
@@ -136,6 +189,10 @@
     .form-row {
         grid-template-columns: 1fr;
     }
+    
+    .special-offer .offer-content {
+        padding: 0;
+    }
 }
 
 /* ---------- EXTRA SMALL SCREENS (576px and down) ---------- */
@@ -154,7 +211,7 @@
     }
     
     .logo img {
-        height: 40px;
+        height: 50px;
     }
     
     .header-buttons {
@@ -171,6 +228,21 @@
     
     .hero-content p {
         font-size: 1rem;
+    }
+    
+    .hero-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-image {
+        width: 200px;
+        height: 200px;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .hero-image:last-child {
+        margin-bottom: 0;
     }
     
     .section-header h2 {
@@ -200,12 +272,32 @@
         box-shadow: none;
     }
     
-    .chat-widget {
-        bottom: 100px;
-    }
-    
     #back-to-top {
         bottom: 80px;
+    }
+    
+    .offer-text {
+        padding: var(--spacing-md);
+    }
+    
+    .offer-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .offer-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .offer-price p {
+        font-size: 1.2rem;
+    }
+    
+    .offer-price span {
+        font-size: 1.6rem;
+    }
+    
+    .offer-caption h4 {
+        font-size: 1rem;
     }
 }
 
@@ -227,7 +319,6 @@
     header, 
     footer, 
     .floating-cta, 
-    .chat-widget, 
     #back-to-top {
         display: none !important;
     }
