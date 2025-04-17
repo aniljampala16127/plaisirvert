@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Lawn Care Estimate - Plaisir Vert Montreal</title>
+    <meta name="description" content="Request a free estimate for eco-friendly lawn care services in Montreal. No obligation quote for residential and commercial properties.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Free Lawn Care Estimate - Plaisir Vert Montreal">
+    <meta property="og:description" content="Request a free estimate for eco-friendly lawn care services in Montreal. No obligation quote for residential and commercial properties.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://plaisirvert.com/estimate.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="Plaisir Vert Logo">
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="services.html">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services/soil-aeration.html">Soil Aeration</a></li>
+                                <li><a href="services/seeding.html">Seeding</a></li>
+                                <li><a href="services/renovation.html">Renovation</a></li>
+                                <li><a href="services/top-dressing.html">Top Dressing</a></li>
+                                <li><a href="services/fertilization.html">Fertilization</a></li>
+                                <li><a href="services/lawn-mowing.html">Lawn Mowing</a></li>
+                                <li><a href="services/weed-control.html">Weed Control</a></li>
+                                <li><a href="services/lawn-watering.html">Lawn Watering</a></li>
+                                <li><a href="services/seasonal-cleanup.html">Spring/Fall Cleanup</a></li>
+                                <li><a href="services/garden-maintenance.html">Garden Maintenance</a></li>
+                                <li><a href="services/hedge-trimming.html">Hedge/Shrub Trimming</a></li>
+                                <li><a href="services/tree-services.html">Tree Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="price-list.html">Price List</a></li>
+                        <li><a href="estimate.html" class="active">Free Estimate</a></li>
+                        <li><a href="ecological.html">Why Ecological</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <a href="estimate.html" class="btn btn-primary">Get a Free Estimate</a>
+                    <div class="language-toggle">
+                        <a href="#" class="active">EN</a>
+                        <span>|</span>
+                        <a href="fr/estimate.html">FR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Free Estimate</h1>
+            <p>Get a personalized quote for your lawn care needs</p>
+        </div>
+    </section>
+
+    <!-- Estimate Form Section -->
+    <section class="estimate-section">
+        <div class="container">
+            <div class="form-intro">
+                <h2>Request Your Free Estimate Today</h2>
+                <p>Fill out the form below and one of our lawn care experts will contact you within 24 hours to discuss your specific needs and provide a detailed, no-obligation quote.</p>
+            </div>
+            
+            <div class="form-container">
+                <!-- This form uses Netlify's form handling -->
+                <form name="estimate-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    
+                    <!-- Contact Information -->
+                    <h3>Contact Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <!-- Property Information -->
+                    <h3>Property Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" name="address" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="property-type">Property Type *</label>
+                            <select id="property-type" name="property-type" class="form-control" required>
+                                <option value="" selected disabled>Select property type</option>
+                                <option value="Residential">Residential</option>
+                                <option value="Commercial">Commercial</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" name="city" class="form-control" value="Montreal" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="postal-code">Postal Code *</label>
+                            <input type="text" id="postal-code" name="postal-code" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lawn-size">Approximate Lawn Size (if known)</label>
+                        <select id="lawn-size" name="lawn-size" class="form-control">
+                            <option value="" selected disabled>Select lawn size</option>
+                            <option value="Small (< 1,000 sq ft)">Small (< 1,000 sq ft)</option>
+                            <option value="Medium (1,000 - 5,000 sq ft)">Medium (1,000 - 5,000 sq ft)</option>
+                            <option value="Large (5,000 - 10,000 sq ft)">Large (5,000 - 10,000 sq ft)</option>
+                            <option value="Very Large (> 10,000 sq ft)">Very Large (> 10,000 sq ft)</option>
+                            <option value="Not Sure">Not Sure</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Service Needs -->
+                    <h3>Services Needed</h3>
+                    <div class="form-group">
+                        <label>Which services are you interested in? (Select all that apply)</label>
+                        <div class="checkbox-group">
+                            <div class="form-check">
+                                <input type="checkbox" id="service-mowing" name="services[]" value="Lawn Mowing">
+                                <label for="service-mowing">Lawn Mowing</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="service-fertilization" name="services[]" value="Fertilization">
+                                <label for="service-fertilization">Fertilization</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="service-aeration" name="services[]" value="Soil Aeration">
+                                <label for="service-aeration">Soil Aeration</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="service-seeding" name="services[]" value="Seeding">
+                                <label for="service-seeding">Seeding</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="service-weed" name="services[]" value="Weed Control">
+                                <label for="service-weed">Weed Control</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="service-cleanup" name="services[]" value="Spring/Fall Cleanup">
+                                <label for="service-cleanup">Spring/Fall Cleanup</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="service-garden" name="services[]" value="Garden Maintenance">
+                                <label for="service-garden">Garden Maintenance</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="service-hedge" name="services[]" value="Hedge/Shrub Trimming">
+                                <label for="service-hedge">Hedge/Shrub Trimming</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="service-other" name="services[]" value="Other">
+                                <label for="service-other">Other (please specify below)</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="frequency">Service Frequency</label>
+                        <select id="frequency" name="frequency" class="form-control">
+                            <option value="" selected disabled>Select frequency</option>
+                            <option value="One-time Service">One-time Service</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Bi-weekly">Bi-weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Seasonal">Seasonal</option>
+                            <option value="Not Sure">Not Sure</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Information or Special Requests</label>
+                        <textarea id="message" name="message" class="form-control" rows="5"></textarea>
+                    </div>
+                    
+                    <!-- How did you hear about us -->
+                    <div class="form-group">
+                        <label for="referral">How did you hear about us?</label>
+                        <select id="referral" name="referral" class="form-control">
+                            <option value="" selected disabled>Select an option</option>
+                            <option value="Google Search">Google Search</option>
+                            <option value="Friend/Family Referral">Friend/Family Referral</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Local Advertisement">Local Advertisement</option>
+                            <option value="Saw Your Truck/Team">Saw Your Truck/Team</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Consent -->
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">
+                                I consent to Plaisir Vert collecting my information to process my request and contact me about lawn care services. *
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">
+                                I would like to receive occasional emails about special offers and lawn care tips.
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="reset" class="btn btn-secondary">Reset Form</button>
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="estimate-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>What Happens Next?</h3>
+                    <p>After submitting your request, one of our lawn care specialists will contact you within 24 hours to discuss your needs and schedule a convenient time to visit your property (if necessary) to provide an accurate estimate.</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>No Obligation</h3>
+                    <p>Our estimates are completely free and come with no obligation. We believe in transparent pricing and will provide detailed information about our services and costs.</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Need Immediate Assistance?</h3>
+                    <p>Call us directly at <a href="tel:5143693693">514-369-3693</a> during business hours for faster service or to speak with a lawn care specialist right away.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from satisfied customers throughout Montreal</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"The estimate process was quick and painless. The team was professional and provided a very detailed breakdown of services and costs. No hidden fees or surprises!"</p>
+                        <div class="client-info">
+                            <h4>Robert Lavoie</h4>
+                            <p>Outremont, Montreal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"I was impressed by how quickly they responded to my estimate request. Within a day, they had assessed my property and provided a comprehensive quote. Excellent service!"</p>
+                        <div class="client-info">
+                            <h4>Emily Chen</h4>
+                            <p>Ville-Marie, Montreal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <p>"As a first-time homeowner, I had many questions about lawn care. The Plaisir Vert team was patient and explained everything clearly during the estimate process. Highly recommend!"</p>
+                        <div class="client-info">
+                            <h4>Michael Johnson</h4>
+                            <p>Saint-Laurent, Montreal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-slide" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <button class="dot active" aria-label="Testimonial 1"></button>
+                    <button class="dot" aria-label="Testimonial 2"></button>
+                    <button class="dot" aria-label="Testimonial 3"></button>
+                </div>
+                <button class="next-slide" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.svg" alt="Plaisir Vert Logo">
+                    <p>Ecological lawn care for a greener Montreal.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="price-list.html">Price List</a></li>
+                            <li><a href="estimate.html">Free Estimate</a></li>
+                            <li><a href="ecological.html">Why Ecological</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="services/soil-aeration.html">Soil Aeration</a></li>
+                            <li><a href="services/seeding.html">Seeding</a></li>
+                            <li><a href="services/fertilization.html">Fertilization</a></li>
+                            <li><a href="services/lawn-mowing.html">Lawn Mowing</a></li>
+                            <li><a href="services/weed-control.html">Weed Control</a></li>
+                            <li><a href="services/seasonal-cleanup.html">Seasonal Cleanup</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> 2335 Avenue Montclair, Montréal, QC H4B 2H9</li>
+                            <li><i class="fas fa-phone"></i> <a href="tel:5143693693">514-369-3693</a></li>
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:info@plaisirvert.com">info@plaisirvert.com</a></li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 8am-5pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="language-toggle">
+                    <a href="#" class="active">EN</a>
+                    <span>|</span>
+                    <a href="fr/estimate.html">FR</a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Plaisir Vert. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Floating CTA Button -->
+    <div class="floating-cta">
+        <a href="tel:5143693693" class="btn btn-primary">Call Us: 514-369-3693</a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
